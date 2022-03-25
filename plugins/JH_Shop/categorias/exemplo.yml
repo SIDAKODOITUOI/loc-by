@@ -1,0 +1,101 @@
+# Print de um bau com os slots numerados: http://jhdev.xyz/Large_Chest_With_Slots_Id.png
+# Se voce tem PlaceholderAPI use %jhshop_cash% para mostrar os pontos
+categoria_1:
+
+  # Essa categoria devera aparecer no menu do /shop ?
+  disponivel: true
+  
+  # Qual nome do item que essa categoria deve ter?
+  nome: "Categoria 9"
+  
+  # Nome do Inventario ao abrir o menu
+  InvNome: "Categoria 9"
+  
+  # Qual item essa categorai deve ser
+  item: "351:1"
+  
+  # Qual lore essa categoria deve ter?
+  lore:
+  - ""
+  - "&7   SUA LORE DO ITEM AQUI"
+  - ""
+  
+  # Quais os encantamentos ela deve ter?
+  # coloque enchants: []
+  # para não ter encantamentos
+  enchants:
+  - UNBREAKING:1
+  - SHARPNESS:1
+  
+  # Oque vai vender nesta categoria?
+  # Você pode criar itens infinitos
+  menus:
+    # ID da venda na categoria
+    SEUITEM:
+    
+      # Nome do que se vai vender
+      nome: "&bSEU ITEM"
+      
+      # Item que devera aparecer no menu
+      item: "DIAMOND"
+      
+      # Qual a quantidade que o item vai ter
+      amount: 1
+      
+      # Lore que o item tera
+      lore:
+      - ""
+      - "   &7Comprando isso voce ganhara SEUITEM"
+      - ""
+      
+      # Em qual slots do inventario ele deve aparecer
+      slot: 20
+      
+      # Preço para comprar i item no SHOP
+      preco: 10.0
+        
+      # Quais os encantamentos ela deve ter?
+      # coloque enchants: []
+      # para não ter encantamentos
+      enchants:
+      - UNBREAKING:1
+      - SHARPNESS:1
+      
+      # Comandos que serao executados pelo console quando o jogador comprar o item no SHOP
+      commands:
+      - say &6O jogador &f%jogador% &6Comprou &f%produto% &6no SHOP por &f%preco%
+      
+    # ID da venda na categoria
+    SEUITEM2:
+    
+      # Nome do que se vai vender
+      nome: "&bSEU ITEM 2"
+      
+      # Item que devera aparecer no menu
+      item: "DIAMOND_ORE"
+      
+      # Qual a quantidade que o item vai ter
+      amount: 1
+      
+      # Lore que o item tera
+      lore:
+      - ""
+      - "   &7Comprando isso voce ganhara SEUITEM 2"
+      - ""
+      
+      # Em qual slots do inventario ele deve aparecer
+      slot: 22
+      
+      # Preço para comprar i item no SHOP
+      preco: 10.0
+        
+      # Quais os encantamentos ela deve ter?
+      # coloque enchants: []
+      # para não ter encantamentos
+      enchants:
+      - UNBREAKING:1
+      - SHARPNESS:1
+      
+      # Comandos que serao executados pelo console quando o jogador comprar o item no SHOP
+      commands:
+      - say &6O jogador &f%jogador% &6Comprou &f%produto% &6no SHOP por &f%preco%

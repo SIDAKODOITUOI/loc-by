@@ -1,0 +1,29 @@
+lastAccountName: CraflowMC
+timestamps:
+  login: 1648185665057
+  logout: 1648186089877
+  lastteleport: 1647742696134
+ipAddress: 171.233.134.102
+logoutlocation:
+  world: world
+  x: 31.300000011920925
+  y: 73.0
+  z: 355.300000011921
+  yaw: -57.428833
+  pitch: 26.89931
+lastlocation:
+  world: world
+  x: 4.270833445527158
+  y: 84.0625
+  z: 10.032341101185246
+  yaw: -18.817299
+  pitch: 15.304734
+afk: false
+homes:
+  home:
+    world: world
+    x: 27.420905730715624
+    y: 73.0
+    z: 329.542976850251
+    yaw: -87.08301
+    pitch: 11.237236

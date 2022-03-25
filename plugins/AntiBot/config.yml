@@ -1,0 +1,31 @@
+throttles:
+  login: 4500
+  chat: 1500
+  commands: 1000
+
+chat:
+  blacklist:
+    - 'fuck this server'
+    - 'shitty server'
+    - 'this server sucks'
+    - 'i hate this server'
+    - '(dot)'
+    - 'lag'
+    - 'reboot'
+    - 'bored'
+    - 'boring'
+    - 'chargeback'
+    - 'ping'
+    - 'dying server'
+    - 'this server is dead'
+    - 'dead server'
+
+messages:
+  login:
+    failed: "UUID lookup failed. Try restarting your game."
+    throttle: "Relogging too fast, try waiting a few seconds."
+  chat:
+    duplicate: "&cDon't repeat yourself."
+    throttle: "&cDon't chat so fast."
+  commands:
+    throttle: "&cDon't use commands so fast."

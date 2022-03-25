@@ -1,0 +1,44 @@
+categoria_3:
+  disponivel: true
+  nome: Categoria 3
+  InvNome: Categoria 3
+  item: CHEST
+  lore:
+  - ''
+  - '&7   SUA LORE DO ITEM AQUI'
+  - ''
+  enchants:
+  - UNBREAKING:1
+  - SHARPNESS:1
+  glow: true
+  menus:
+    SEUITEM:
+      nome: '&bSEU ITEM'
+      item: DIAMOND
+      amount: 1
+      lore:
+      - ''
+      - '   &7Comprando isso voce ganhara SEUITEM'
+      - ''
+      slot: 20
+      preco: 10.0
+      enchants:
+      - UNBREAKING:1
+      - SHARPNESS:1
+      commands:
+      - say &6O jogador &f%jogador% &6Comprou &f%produto% &6no SHOP por &f%preco%
+      glow: true
+    SEUITEM2:
+      nome: '&bSEU ITEM 2'
+      item: NETHER_STAR
+      amount: 10
+      lore:
+      - ''
+      - '   &7Comprando isso voce ganhara SEUITEM 2'
+      - ''
+      slot: 22
+      preco: 22.0
+      enchants: []
+      commands:
+      - say &6O jogador &f%jogador% &6Comprou &f%produto% &6no SHOP por &f%preco%
+      glow: true

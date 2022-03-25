@@ -1,0 +1,20 @@
+lastAccountName: AnAFK
+timestamps:
+  login: 1648166033729
+  logout: 1648166041298
+ipAddress: 116.102.213.1
+logoutlocation:
+  world: world
+  x: -6.73041161366814
+  y: 84.0625
+  z: 1.4159967200830579
+  yaw: -268.0
+  pitch: 2.0
+afk: false
+lastlocation:
+  world: world
+  x: 31.30000001192093
+  y: 74.0
+  z: 147.90217917095674
+  yaw: 199.25581
+  pitch: 40.931023

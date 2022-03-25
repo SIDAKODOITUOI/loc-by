@@ -1,0 +1,12 @@
+logoutlocation:
+  world: world
+  x: -4.5
+  y: 98.0
+  z: 3.5
+  yaw: -269.88617
+  pitch: 2.0865822
+lastAccountName: FishingBot
+timestamps:
+  login: 1647658286263
+  logout: 1647593391788
+ipAddress: 127.0.0.1

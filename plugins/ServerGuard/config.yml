@@ -1,0 +1,30 @@
+Config:
+  Settings:
+    Status: Enabled
+    ValueOfWarnings: 3
+    Groupmanager_installed?: 'No'
+    Groupmanager_Groups: Administrator
+    Warningmessage: Be carefull! You need 1 Warning to kick from the Server!
+    Kickmessage: Sorry but this Server dont need Insults!
+    After_the_warnings: Kick
+  Protects:
+    Mods:
+      XRay: ' [Coming Soon]'
+      FlyMod: '[Coming Soon]'
+      Spammer: Enabled
+    World:
+      Logger: Enabled
+      NoTNT: Enabled
+      NoExplosion: Enabled
+      Insult: Enabled
+  Blacklist:
+    '1': WORD
+    '2': WORD
+    '3': WORD
+    '4': WORD
+    '5': WORD
+    '6': WORD
+    '7': WORD
+    '8': WORD
+    '9': WORD
+    '10': WORD

@@ -1,0 +1,8 @@
+Second-item:
+  name: '&cMENU'
+  slot: 5
+  id: 345
+  lore:
+    - '&7MỞ MENU SERVER'
+  command: 'op:menu'
+  cooldown-seconds: 5

@@ -1,0 +1,29 @@
+lastAccountName: Ducthanh200328
+timestamps:
+  login: 1648180881942
+  logout: 1648180895616
+  lastteleport: 1647838449377
+ipAddress: 118.70.68.221
+logoutlocation:
+  world: world
+  x: -1.5
+  y: 84.0625
+  z: 1.5
+  yaw: -270.06577
+  pitch: 5.270815
+lastlocation:
+  world: world
+  x: 32.671623903620436
+  y: 74.0
+  z: 148.14810277665632
+  yaw: -349.69302
+  pitch: 53.55835
+afk: false
+homes:
+  home:
+    world: world
+    x: 8.398136310937584
+    y: 84.0625
+    z: -1.0473617837660503
+    yaw: -253.46277
+    pitch: 29.113312

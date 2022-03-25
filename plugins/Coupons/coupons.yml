@@ -1,0 +1,22 @@
+users:
+  Notch:
+    used:
+    - kick
+    holding:
+    - ban
+coupons:
+  kick:
+  - bukkit.command.kick
+  - essentials.kick
+  ban:
+  - bukkit.command.ban
+  - bukkit.command.kic
+menu:
+  item:
+    type: COMPASS
+    data: 0
+    name: '&rtest'
+  settings:
+    useLimit: false
+  actions:
+  - '[player] menu'

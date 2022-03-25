@@ -1,0 +1,105 @@
+# Nao renomear os categorias_1 a  10 fara o plugin parar de funcionar!
+# Se voce tem PlaceholderAPI use %jhshop_cash% para mostrar os pontos em scoreboard
+# Se voce tem uma versao paga que quer vender pontos com mercado pago ou paypal
+# Voce deve criar um botao de pagamento no site do PayPal ou Mercado pago
+# Pegar o nome do botao e adicionar a 'nomesDosBotoesDePagamento:' na config a baixo
+# Voce precisa de uma conta de vendedor para usar isso
+# Pegue as infomacoes da conta e coloque na api
+# Credenciais Mercado Pago: https://www.mercadopago.com/mlb/account/credentials?type=basic
+# Licenca se voce nao tem licenca o plugin ira mudar para a versao free
+licence: XXXXXXXXXXXXXXX
+ServerInfo:
+  nome: '&cSeu Servidor'
+  ComandosQuandoAtivarPontos:
+  - tell %jogador% Voce ativou %valor% pontos.
+  Desconto: 0
+  NaoAceitarPagamentosMaisAntigosQue:
+    Dia: 1
+    Mes: 1
+    Ano: 2018
+  DecoracaoID: '160:0'
+  DecoracaoGlow: true
+  InfoLore:
+    SemDesconto:
+    - ''
+    - '&eNome (&6Produto&e): &r%produto%'
+    - '&eCusto (&6Pontos&e): &r%preco%'
+    Desconto:
+    - ''
+    - '&eNome (&6Produto&e): &r%produto%'
+    - '&eCusto (&6Pontos&e): &r%preco% &aCash &7(&m%semdesconto%&7) &f-%off% OFF'
+  Multiplicador: 1.0
+site:
+- ''
+- '&7   SeuSite.com'
+- ''
+MySQL:
+  ativar: false
+  ip: localhost
+  port: '3306'
+  user: root
+  password: senha
+  database: cash
+  driver: com.mysql.jdbc.Driver
+pagamentos:
+  mercadopago:
+    enabled: false
+    CLIENT_ID: ''
+    CLIENT_SECRET: ''
+  paypal:
+    enabled: false
+    user: ''
+    password: ''
+    signature: ''
+  pagseguro:
+    enabled: false
+    email: ''
+    token: ''
+  nomesDosBotoesDePagamento:
+  - 20 pontos
+  - 30 pontos
+  - Pontos
+  - aqui coloque o nome do botao que voce criou
+mensagens:
+  prefix: '&3[&aJH_Shop&3] &7'
+  pontos: '&aVoce tem &f%pontos% &apontos.'
+  pontosOutro: '&aO jogador &f%jogador%&a Tem &f%pontos% &apontos.'
+  add: '&eUse: /pontos add <player> <quantidade>'
+  added: '&aVoce deu a &f%jogador% &2%pontos% &apontos.'
+  remove: '&eUse: /pontos remove <player> <quantidade>'
+  removed: '&aVoce removeu &2%pontos% &apontos do jogador &f%jogador%&a.'
+  set: '&eUse: /pontos set <player> <quantidade>'
+  seted: '&aVoce setou os pontos de &f%jogador% &apara &2%pontos%&a.'
+  comprou: '&aVoce comprou &f%produto% &apor &f%preco% &apoints.'
+  semPontos: '&cVoce nao tem &f%preco% &cpara fazer esta compra.'
+  commandDelay: '&cAguarde alguns instantes para usar este comando novamente.'
+  commandAtivarDelay: '&aVoce tem que esperar 1 minuto para tentar ativar uma nova
+    key!'
+  ativar: '&eUse: /ativar <codigo>'
+  gerarKey: '&eUse: /pontos gerarkey <valor>'
+  keyInvalida: '&cKey nao encontrada ou invalida.'
+  ativou: '&aO jogador &f%jogador% &aativou &f%pontos%&a pontos.'
+  pagamentoAntigo: '&cEste pagamento e muito antigo.'
+  erroNoProcessamento: '&cHouve um erro no processamento do pagamento verifique se
+    sua key nao esta errada, tente novamente mais tarde.'
+  naoAprovado: '&cSeu pagamento ainda nao foi aprovado.'
+  naoProduto: '&cEste produto nao foi encontrado em nossa loja.'
+  jaUsada: '&cEsta key ja foi usada.'
+  enviar: '&eUse /pontos enviar <jogador> <quantia>'
+  enviados: '&aVoce enviou &f%pontos% &apara o jogador &f%jogador%&a.'
+  recebidos: '&aVoce recebeu &f%pontos% Cash&a do jogador &f%jogador%&a.'
+  semFundos: '&cVoce nao tem fundos para esta transferencia.'
+  top: '%prefix%&f%i%. &c%jogador% &7» &2$&a%pontos% &fReais'
+shop:
+  CashTopTag: '&a[CashTop]'
+  pontos:
+    nome: '&aVoce tem &f%pontos% &apontos.'
+    ID: gold_nugget
+    UsarSkull: false
+    glow: true
+    lore:
+    - ''
+    - '&7   Adquira Pontos em nosso site   '
+    - '&7   SeuSite.com  '
+    - ''
+    - '&7   /shop info'

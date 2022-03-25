@@ -1,0 +1,56 @@
+
+settings:
+    Enabled-By-Default: true
+    Applied-Items:
+    - DIAMOND_PICKAXE
+    # You can now also use ALL_ITEMS (Caps matter)
+    Timer: 3
+    # Timer is in seconds.
+    Enabled: '&aON'
+    Disabled: '&cOFF'
+    Message-Display-Format: ' &3&l» &e%command% &3&l» &f%usage%'
+    Use-Header-And-Footer-In-Drop-Messages: true
+    GUI-Name: '&fAnti-Drop items list'
+    GUI-Items-Name-Format: '&a%item%'
+    All-Items:
+        Material: PAPER
+        Name: '&aAll items &fare currently applied.'
+        Lore:
+        - ''
+        - ' &3&l» &fClick me to stop applying all items to &6Anti-Drop&f.'
+    Items-In-List:
+        Name: '&a%item%'
+        Lore:
+        - ''
+        - ' &3&l» &fClick me to remove from the &6Anti-Drop &fitems list.'
+messages:
+    Prefix: '&8(&b!&8) &3&l»'
+    Header: '  &f&m+----&3&m----&f&m----&3&m----&8( &fAntiDrop &8)&f&m----&3&m----&f&m----&3&m----+'
+    Footer: '  &f&m+---&3&m----&f&m----&3&m----&f&m----&3&m----&f&m----&3&m----&f&m----&3&m----&f&m---+'
+    Anti-Drop: '%prefix% &fPress again to &asuccessfully &fdrop your &a%item_name%&f.'
+    Drop: '%prefix% &fYou''ve &asuccessfully &fdropped your &a%item_name%&f.'
+    # For "Drop" & "Anti-Drop" you can use either %item% or %item_name%
+    Toggled: '%prefix% &6Anti&f-&6Drop&f is now %mode%&f.'
+    No-Permission: '%prefix% &fSorry, but you don''t have permission to do that.'
+    Reloaded: '%prefix% &fYou''ve &asuccessfully &freloaded the configuration.'
+    Different-Item: '%prefix% &fSorry, but that isn''t the original pickaxe you tried to throw out previously.'
+    Players-Only: '%prefix% &fSorry, but only players can use that command.'
+    Use-Material: '%prefix% &fSorry, but you must use Material format, not number format. &7(exp: diamond_pickaxe, iron_spade, ALL_ITEMS)'
+    Added-Item-In-Hand: '%prefix% &fYou''ve added the &a%item% &fin your hand to the &6Anti-Drop &fitems list.'
+    Added-Specified-Item: '%prefix% &fYou''ve added &a%item% &fto the &6Anti-Drop &fitems list.'
+    Added-All-Items: '%prefix% &fAll items are now applied to the &6Anti-Drop &fitem list.'
+    Already-In-List: '%prefix% &fSorry, but that item is already in the &6Anti-Drop &fitems list.'
+    Removed-Item-In-Hand: '%prefix% &fYou''ve removed the &a%item% &fin your hand from the &6Anti-Drop &fitems list.'
+    Removed-Specified-Item: '%prefix% &fYou''ve removed &a%item% &ffrom the &6Anti-Drop &fitems list.'
+    Removed-All-Items: '%prefix% &fAll items are no longer applied to the &6Anti-Drop &fitem list.'
+    Empty-Handed: '%prefix% &fSorry, but your hand is empty.'
+    Not-In-List: '%prefix% &fSorry, but that item isn''t in the &6Anti-Drop &fitems list.'
+    Air-Not-An-Item: '%prefix% &fSorry, but please provide an actual item.'
+    Item-Does-Not-Exist: '%prefix% &fSorry, but that item doesn''t exist.'
+    Formats:
+        Reload: '%prefix% &e/antidrop reload'
+        Toggle: '%prefix% &e/antidrop toggle'
+        Dev: '%prefix% &e/antidrop dev'
+        GUI: '%prefix% &e/antidrop &egui &8| &emenu&'
+        Add-Item: '%prefix% &e/antidrop &8(&eadditem &8| &eai&8) (&eitem type &8| &ehand &8| &eall_items&8)'
+        Remove-Item: '%prefix% &e/antidrop &8(&eremoveitem &8| &eri&8) (&eitem type &8| &ehand &8| &eall_items&8)'

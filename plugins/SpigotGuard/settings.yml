@@ -1,0 +1,217 @@
+
+inventories:
+  recent-detections-inventory:
+    recent-detection-item:
+      name: "&c{PLAYER-NAME}"
+      lore: 
+      - " &7Packet name: &c{PACKET}"
+      - " &7Details: &c{DETAILS}"
+      - " &7Time of crash attempt: &c{TIME}"
+      - " &7Player last seen at: &c{PLAYER-LAST-SEEN}"
+      - " "
+      - "   &9&lHow to fix it, if it is false positive/detection?"
+      - " &7{HOW-TO-FIX-FALSE-POSITIVE}"
+    name: "&cRecent detections"
+    size: 27
+    no-detections-item:
+      name: "&cNo detections found"
+      lore: 
+      - " &7We did not find any people that tried to crash the server :("
+      - " &7Looks like your players are afraid to try crashers!"
+  player-info-inventory:
+    size: 27
+    crash-attempt-item:
+      name: "&c{TIME}"
+      lore: 
+      - " &7Packet name: &c{PACKET}"
+      - " &7Details: &c{DETAILS}"
+      - " &7Time of crash attempt: &c{TIME}"
+      - " &7Player was last seen at: &c{LAST-SEEN}"
+      - " &7IP: &c{IP}"
+      - " "
+      - "   &9&lHow to fix it, if it is false positive/detection?"
+      - " &7{HOW-TO-FIX-FALSE-POSITIVE}"
+    name: "&cCrash attempts of {PLAYER}"
+  main-inventory:
+    size: 27
+    recent-detections-item:
+      lore: 
+      - "&8&l&m>&r &7Click to open inventory with recent detections"
+      - "&8&l&m>&r &7You will see who tried to crash the server in last time!"
+      name: "&cRecent detections"
+      slot: 12
+      material: "DIAMOND_CHESTPLATE"
+    reload-item:
+      lore: 
+      - "&8&l&m>&r &7Click to reload configuration files"
+      slot: 14
+      material: "STICK"
+      name: "&cReload configs"
+    name: "&cSpigotGuard management"
+# SpigotGuard - the best AntiCrash protection for your minecraft server
+# Made by yooniks, discord: yooniks#0289, discord server: https://www.mc-protection.eu/discord
+# For BungeeCord security ( Anti Bot & Anti Crash ) we recommend: https://www.mc-protection.eu/products/
+# Read more about SpigotGuard or tell your friends to buy it too! https://www.mc-protection.eu/products/
+
+# Do not use '\ n', use %nl%
+messages:
+  notification-message: "%nl%{PREFIX}&7Player &c{PLAYER}&7 tried to crash the server.%nl%{PREFIX}&7Packet: &c{PACKET}%nl%{PREFIX}&7Details: &c{DETAILS}%nl%{PREFIX}&7Read more about this crash attempt: &c/spigotguard {PLAYER}&7%nl%&7"
+  prefix: "&cSpigotGuard &8>> "
+  notification-permission: "spigotguard.notification"
+# Increase it if <ByteBuf/Too big packet size> has false positives
+# Max packet size
+viaversion-max-capacity: 5000
+# Should we allow creativeSlot packets when player is without gamemode? He may be not able to use printer if it is set to FALSE.
+allow-creative-inventory-click-without-gamemode: false
+
+hacker-book:
+  enabled: true
+  next-page: "&eIf it is our mistake, please &econtact the staff."
+  content: "&n&cHello, &9&l{PLAYER}&r!%nl%Looks like the last time you were here you got kicked for suspicious activity and we think you tried to crash the server. To see details please open next page."
+null-address-kick: "&cYour login data is invalid! Please try relogging."
+# Available types:
+# FIND <- Automatically finds a NMS version
+# v1_7, v1_8, v1_12, v1_14, v1_15
+# You can set it manually if you are using custom spigot and the SpigotGuard cannot get your nms server version.
+nms-version: "FIND"
+
+# How should we kick player when he tries to crash the server?
+kick:
+  message: "&cSpigotGuard &8> &7You have been kicked for trying to &ccrash&7 the server."
+  # Available types:
+  # 0 - Instant channel close, kick without any message
+  # 1 - Kick with message (a bit slower because we have to send packet to player that he is kicked)
+  type: 0
+
+book:
+  # Should we block BOOK_AND_QUILL and WRITTEN_BOOK on server? People will be kicked for using it
+  ban-books: false
+  # Max fast-check nbt item length
+  fast-check-max-length: 500
+  max-pages: 50
+  # Max similar pages. Default: 4, Crash books very often use the same page text like 40 times.
+  max-similar-pages: 4
+  # Max page size without color codes
+  max-stripped-page-size: 256
+  # Limit of 2-byte chars. 2-byte chars are non-english chars like China chars, Emojis and similars.
+  max-2byte-chars: 15
+  # Set it to higher value if stuff like <too large page> has false positives
+  max-page-size: 900
+  # Set it to true if your server does not use books very often
+  # It is fast, lightweight check that detects crash books very fast
+  # You could enable it if people do not even have access to book_and_quill and written_book on your server
+  fast-check: false
+
+packet-decoder:
+  # Most of people use chests with nbt to crash your Creative server by placing a lot of chests with chests inside on their plotme home. It overloads chunks and make server crash.
+  block-chests-with-nbt-on-creative: true
+  max-window-size: 1520
+  # Max packet decoding size
+  max-main-size: 5000
+  # 1.12+ crasher. Fixed by Tuinity since 1.15 i think. If you are running 1.12.2 server, mostly Creative, we fix it for you.
+  # Set it to -1 to disable if you have false positives.
+  max-auto-recipe-rate: 5
+  max-payload-size: 1700
+  block-chests-with-nbt-block-size-higher-than: 250
+  enabled: true
+  max-creative-size: 5000
+  # Some changes when you use our ViaVersion fork
+  viaversion:
+    # Should we block (clear) every BOOK (written books, book_and_quill) packet, even if it does not exceed packet size limit?
+    # It could be very useful if you do not allow using/crafting books (written books, book and quill) on your server and want to block every exploit faster
+    clear-all-books: false
+    # FOR ViaVersion - Max packet size when there item inside the packet
+    max-item-size: 2100
+    # Should we ONLY check packet size inside ViaVersion if the item is book?
+    check-only-books: true
+  block-chests-with-nbt-kick-message: "&8[&6SpigotGuard&8] &cPlease do not use chests with already existing NBT data on creative."
+  max-place-size: 1520
+
+# Database Setup
+sql:
+  # Available types: sqlite & mysql
+  storage-type: "sqlite"
+  password: "password"
+  port: 3306
+  # After how many days to remove players from the database, which have been on server and no longer entered. Use 0 or less to stop
+  purge-time: 10
+  # Should we even enable database? If no, spigotguard will save no data.
+  enabled: true
+  # Inform console about purging
+  purge-console-info: true
+  user: "user"
+  database: "database"
+  # Settings for mysql
+  hostname: "localhost"
+block-itemname-when-no-anvil: true
+# Should we use our own checks built-in into ViaVersion? (packet-size checks)
+viaversion-integration: true
+# Commands that well be executed when player tried to crash server
+# Available variables: {PLAYER} and {IP}
+# Do not use dashes!
+commands-when-sure: 
+- "exampleCommand {PLAYER}"
+# Should we block null address in LoginEvents?
+block-null-address: true
+
+place-checks:
+  # Should player be able to send PacketPlayInBlockPlace with FIREWORK and similars when he is not holding it? It is surely exploit.
+  block-placing-firework-when-not-holding-it: true
+  # Should player be able to send PacketPlayInBlockPlace with WRITTEN_BOOK and similars when he is not holding it? It is surely exploit.
+  block-placing-book-when-not-holding-it: true
+  # Should player be able to send PacketPlayInBlockPlace with BANNER and similars when he is not holding it? It is surely exploit.
+  block-placing-banner-when-not-holding-it: true
+# Set it to bigger value if stuff like <tried to place book but is holding xxx> has false positives
+block-fake-packets-only-when-items-nbt-bigger-than: 1000
+
+payload-settings:
+  # Should we block sending payload with MC|BSign when no book was used?
+  block-book-signing-when-no-book-placed: true
+  # Max CustomPayload packet size
+  max-capacity: 2500
+  # Should we block sending payload (book) packets while player does not hold a book in a hand?
+  fail-when-not-holding-book: true
+
+position-checks:
+  allow-invalid-vehicle-movement-v3: false
+  # Should we enable FLY CRASHER check?
+  # If it has false positives, just disable it.
+  check-fly-crasher: true
+  allow-invalid-vehicle-movement-v4: false
+  # Should we enable CHUNK CRASHER check?
+  # If it has false positives, just disable it.
+  check-chunk-crasher: true
+  # Should we enable CHUNK CRASHER v2 check?
+  # If it has false positives, just disable it.
+  check-chunk-crasher-v2: true
+  allow-invalid-vehicle-movement-v5: false
+  check-yaw-crasher: true
+  prevent-moving-into-unloaded-chunks: false
+  # Should we allow POSITION packets with Double.MAX_VALUE values? Phase cheats usually use it! It can also lag a server a bit.
+  allow-invalid-movement-v2: false
+  # Should we allow POSITION packets with Integer.MAX_VALUE values? Phase cheats usually use it! It can also lag a server a bit.
+  allow-invalid-movement-v1: true
+  max-distance-between-player-and-block-position: 30
+# How big should be the difference beetwen NOW & LAST arm animation packets
+arm-animation-timestamp: 20
+
+other-nbt:
+  max-array-size: 50
+  max-list-size: 50
+  limit-chest-nbt: true
+  # Set it to higher value if stuff like <too large list length> has false positives
+  max-list-content: 900
+  max-lists: 10
+  max-keys: 20
+  firework-limit: 300
+  fireworks-charge-limit: 800
+  max-simple-nbt-limit: 10000
+  simple-nbt-limit: true
+  banner-limit: 200
+
+skull-checks:
+  # Should we block head/skull textures that do not start with http://textures.minecraft.net ?
+  block-invalid-head-texture: true
+# Put your license key here. If you dont have a one, please contact us on discord: https://mc-protection.eu/discord and send proof of payment to get your license key.
+license: "yourLicenseKeyHere"
+debug: false

@@ -1,0 +1,696 @@
+groups:
+  member:
+    build: true
+    options:
+      prefix: '&b&l[&2Member&b&l]&f '
+      default: true
+    permissions:
+    - customjoinitems.admin
+    - Napthe.command    
+    - skinsrestorer.playercmds
+    - auctions.command.bid
+    - tablist.staff
+    - auctions.command.end
+    - essentials.craft
+    - gMoney.cmd.top
+    - auctions.command.queue
+    - auctions.command.start
+    - marry.priest
+    - guishop.use
+    - marry.tp
+    - marry.gift
+    - marry.kiss
+    - marry.sethome
+    - marry.home
+    - marry.chat
+    - marry.chat.color
+    - marry.chat.format
+    - marry.listenchat
+    - marry.delhome
+    - marry.user
+    - marry.list
+    - marry.pvpon
+    - marry.pvpoff
+    - authme.dn
+    - authme.dk
+    - RazSignShop.Admin.Remove.Buy
+    - essentials.back
+    - essentials.back.ondeath
+    - essentials.afk.auto
+    - essentials.signs.create.color
+    - essentials.signs.use.balance
+    - essentials.signs.use.buy
+    - essentials.signs.use.sell
+    - essentials.signs.use.disposal
+    - essentials.signs.use.enchant
+    - essentials.signs.use.free
+    - essentials.signs.use.heal
+    - essentials.signs.use.info
+    - essentials.signs.use.kit
+    - essentials.signs.use.repair
+    - essentials.signs.use.time
+    - essentials.signs.use.warp
+    - essentials.signs.use.weather
+    - essentials.suicide
+    - essentials.balance
+    - essentials.kit
+    - essentials.list
+    - essentials.pay
+    - essentials.msg
+    - essentials.rules
+    - essentials.spawn
+    - essentials.home
+    - essentials.sethome
+    - essentials.tpaccept
+    - essentials.tpdeny
+    - essentials.tpa
+    - essentials.warp.overwrite.a
+    - essentials.kits.starter
+    - essentials.help
+    - essentials.mail
+    - chatmanager.chat.global
+    - coloredtags.update
+    - PlayerPoints.me
+    - PlayerPoints.pay
+    - PlayerPoints.look
+    - authme.player.*
+    - Napthe.command
+    - chestcommands.open.*
+    - essentials.ignore
+    - buyspawners.mine.mobtype
+    - shopkeeper.player.trade
+    - shopkeeper.player.buy
+    - RazSignShop.Admin.Remove.Sell
+    - RazSignShop.Users.Sell
+    - RazSignShop.Users.Buy
+    - lootbox.use.lootbox.coin
+    - lootbox.use.lootbox.kisi
+    - sinhnhat.setbirth
+    - fastcraft.toggle
+    - fastcraft.use
+    - sg.arena.join.
+    - playervaults.commands.use
+    - essentials.kits.Online
+    - playervaults.amount.1
+    - exp.bottle
+    - playervaults.amount.2
+    - mysteryboxes.command.menu
+    - exp.drop
+    - banknotes.withdraw
+    - permission.trails.smoke
+    - essentials.signs.use.*
+    - chestcommands.open.*.yml
+    - essentials.signs.use.buy
+    - essentials.signs.use.sell
+    - essentials.signs.use.repair
+    - chestcommand.open.*
+    - cc.redeem
+    - deathdropsapi.keep
+    - bukkit.broadcast.user
+    - bukkit.command.help
+    - essentials.back
+    - essentials.back.ondeath
+    - essentials.afk.auto
+    - essentials.signs.create.color
+    - essentials.signs.use.balance
+    - essentials.signs.use.buy
+    - essentials.signs.use.sell
+    - essentials.signs.use.disposal
+    - essentials.signs.use.enchant
+    - essentials.signs.use.free
+    - essentials.signs.use.heal
+    - essentials.signs.use.info
+    - essentials.signs.use.kit
+    - essentials.signs.use.repair
+    - essentials.signs.use.time
+    - essentials.signs.use.warp
+    - essentials.signs.use.weather
+    - essentials.suicide
+    - essentials.balance
+    - essentials.kit
+    - essentials.list
+    - essentials.pay
+    - essentials.msg
+    - essentials.rules
+    - essentials.spawn
+    - essentials.home
+    - essentials.sethome
+    - essentials.tpaccept
+    - essentials.tpdeny
+    - essentials.tpa
+    - essentials.warp
+    - essentials.warp.list
+    - essentials.kits.starter
+    - essentials.help
+    - essentials.mail
+    - chatmanager.chat.global
+    - coloredtags.update
+    - PlayerPoints.me
+    - PlayerPoints.pay
+    - PlayerPoints.look
+    - authme.player.*
+    - Napthe.command
+    - chestcommands.open.*
+    - essentials.ignore
+    - essentials.build
+    - essentials.build.drop
+    - essentials.build.collect
+    - essentials.list
+    - essentials.motd
+    - essentials.rules
+    - essentials.spawn
+    - essentials.kits.newbie
+    - essentials.jail.allow.rules
+    - essentials.home
+    - essentials.sethome
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.back
+    - essentials.back.ondeath
+    - essentials.balance
+    - CA.help
+    - CA.go
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.getpos
+    - essentials.kit
+    - essentials.kits.Khoidau
+    - essentials.kits.Tichcuc
+    - essentials.kits.Chamchi
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.kits.food
+    - essentials.msg
+    - essentials.pay
+    - essentials.sethome.bed
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.tpdeny
+    - essentials.warp
+    - essentials.warp.list
+    - essentials.jail.allow.mail
+    - authme.player.*
+    - coreprotect.inspect
+    - mcmmo.defaults
+    - mypet.user.leash.*
+    - MyPet.user.command.release
+    - MyPet.user.command.capturehelper
+    - MyPet.custom.skilltree.*
+    - MyPet.user.command.name
+    - MyPet.user.command.respawn
+    - MyPet.custom.skilltree.Utility
+    - citizens.npc.talk
+    - factions.kit.default
+    - towny.chat.local
+    - towny.wild.build.*
+    - towny.wild.destroy.*
+    - nte.member
+    - globalmarket.create
+    - globalmarket.history
+    - globalmarket.send
+    - globalmarket.util
+    - globalmarket.quicklist
+    - globalmarket.quickmail
+    - globalmarket.pricecheck
+    - vipzero.user
+    - ce.ench.*
+    - ce.item.*
+    - PlayerPoints.look
+    - PlayerPoints.pay
+    - PlayerPoints.me
+  Admin:
+    options:
+      rank: ad
+      prefix: '&6[&cAdmin&6]&f '
+    inheritance:
+    - Police
+    permissions:
+    - LWC.*
+    - authme.*
+    - betterenderchest.*
+    - choptree.*
+    - coreprotect.*
+    - nocheatplus.*
+    - worldedit.*
+    - worldguard.*
+    - essentials.joinfullserver
+    - RankTab.Use
+  Co-Owner:
+    build: true
+    permissions:
+    - lockeditems.ignore
+    - essentials.op
+    - nte.Owner
+    inheritance:
+    - admin
+    options:
+      prefix: '&b&lCo-Owner&r &b&l'
+      default: false
+  Owner:
+    build: true
+    permissions:
+    - lockeditems.ignore
+    - essentials.kit
+    - essentials.pl
+    - deathdropsapi.keep
+    - nte.Owner
+    - deathdropsapi.keep
+    - '*'
+    inheritance:
+    - default
+    options:
+      prefix: '&d&l✗&b&lOwner&d&l✗&r &b&l'
+      default: false
+  king:
+    inheritance:
+    - Member
+    - Vip
+    permissions:
+    - nte.king
+    - essentials.sethome.multiple.legendary
+    - essentials.near
+    - essentials.invsee
+    - deathdropsapi.keep
+    - essentials.feed
+    - essentials.me
+    - essentials.kits.King
+    - essentials.nickcolor
+    - essentials.repair
+    - essentials.kit.king
+    - essentials.repair.all
+    - essentials.chatcolor
+    - essentials.hat
+    - essentials.chat.magic
+    - essentials.chat.format
+    - essentials.chat.color
+    - essentials.heal
+    - essentials.ec
+    - essentials.fly
+    - nte.king
+    - playervaults.commands.use
+    - playervaults.amount.3
+    - playervaults.amount.2
+    - playervaults.amount.1
+    - ce.ench.*
+    - ce.item.*
+    - keep-items.item.*
+    - keep-items.level
+    options:
+      prefix: '&3[ &bKing &3] &a'
+  vip:
+    inheritance:
+    - Member
+    permissions:
+    - keep-items.level
+    - nte.vip
+    - deathdropsapi.keep
+    - essentials.craft
+    - essentials.fly
+    - essentials.kits.Vip
+    - playervaults.commands.use
+    - playervaults.amount.2
+    - essentials.enderchest
+    - essentials.hat
+    - essentials.kits.Vip
+    - essentials.repair
+    - essentials.feed
+    - essentials.craft
+    - essentials.nick
+    - essentials.me
+    - essentials.joinfullserver - playervaults.workbench
+    options:
+      prefix: '&3[&eVIP&3] &a'
+  Vipcode:
+    inheritance:
+    - Member
+    permissions:
+    - keep-items.item.*
+    - keep-items.level
+    - nte.vip
+    - deathdropsapi.keep
+    - essentials.fly
+    - essentials.kits.tadien
+    - playervaults.commands.use
+    - playervaults.amount.2
+    - essentials.enderchest
+    - essentials.hat
+    - essentials.repair
+    - essentials.feed
+    - essentials.craft
+    - essentials.nick
+    - essentials.me
+    - essentials.joinfullserver
+    options:
+      prefix: '&f[&b&lVip&f&l]&a'
+  Trader:
+    inheritance:
+    - King
+    - member
+    permissions:
+    - ce.enchant.*
+    - ce.cmd.*
+    - ce.cmd
+    - ce.*
+    - ce
+    - essentials.gamemode
+    - essentials.sethome
+    - essentials.warp.list
+    - essentials.warp.*
+    - essentials.warp
+    - essentials.setwarp
+    - shopkeeper.*
+    - CustomEnchantments.*
+    - NBTEditor.*
+    - MyPet.admin
+    - essentials.jail.allow.jails
+    - essentials.jail.allow.togglejail
+    - essentials.joinfullserver
+    - essentials.skull
+    - PlayerPoints.me
+    - skinsrestorer.cmds
+    - skinsrestorer.playercmds
+    - customenchantments.*
+    - CustomEnchantments.*
+    - CustomEnchantments.ce
+    - CustomEnchantments.list
+    - CustomEnchantments.reload
+    - CustomEnchantments.ench*
+    - CustomEnchantments.book
+    - CustomEnchantments.add
+    - CustomEnchantments.remove
+    - CustimEnchantments.info
+    - CustimEnchantments.reset
+    - CustimEnchantments.access
+    - enchantmentAPI.*
+    - Citizens.*
+    - CommandNPC.*
+    - citizens.*
+    - Customenchantments.*
+    - Crazyenchantments.*
+    - autosaveworld.*
+    - ce.item.*
+    - ce.list.*
+    - shopkeeper.*
+    - essentials.invsee
+    - crazyenchantments.*
+    - MyItems.*
+    - essentials.nick
+    - essentials.tp
+    - essentials.tptoggle
+    - essentials.unban
+    - essentials.banip
+    - essentials.kick.*
+    - essentials.ban
+    - essentials.kick
+    - essentials.trade.*
+    - essentials.joinfullserver
+    - essentials.gamemode.*
+    - myitems.*
+    - RankTab.Use
+    options:
+      prefix: '&f◥&9&l|&6&lTrader&9&l|&f◤'
+  legendary:
+    inheritance:
+    - Member
+    - king
+    permissions:
+    - keep-items.item.*
+    - deathdropsapi.keep
+    - keep-items.level
+    - playervaults.commands.use
+    - playervaults.amount.1
+    - essentials.kits.Legendary
+    - playervaults.amount.2
+    - playervaults.amount.3
+    - playervaults.amount.6
+    - nte.theking
+    - essentials.kits.Theking
+    - essentials.joinfullserver
+    options:
+      prefix: '&f[&5&lL&d&le&e&lg&b&le&4&ln&c&ld&f&la&a&lr&9&ly&f] &a'
+  helper:
+    inheritance:
+    - Member
+    - vip
+    - legendary
+    permissions:
+    - essentials.mute
+    - essentials.kick
+    - essentials.tp
+    - essentials.tp
+    - essentials.fix
+    - essentials.kick
+    - essentials.mute
+    - essentials.joinfullserver
+    - essentials.togglejail
+    - essentials.ec
+    - essentials.invsee
+    - RankTab.Use
+    options:
+      prefix: '&d&l&f&l[&d&lHelper&f&l]'
+  police:
+    inheritance:
+    - Member
+    - VIP
+    - legendary
+    permissions:
+    - essentials.kick.*
+    - essentials.kick
+    - essentials.mute
+    - essentials.god
+    - essentials.mute.notify
+    - essentials.repair.all
+    - essentials.jail.allow.jails
+    - essentials.jail.allow.togglejail
+    - essentials.vanish
+    - essentials.vanish.*
+    - essentials.jail
+    - essentials.tp
+    - RankTab.Use
+    options:
+      prefix: '&f[&b&lPolice&f]'
+  Builder:
+    inheritance:
+    - Police
+    permissions:
+    - citizens.*
+    - CommandNPC.*
+    - shopkeeper.*
+    - essentials.gamemode
+    - worldguard.*
+    - worldedit.*
+    - factions.admin
+    - essentials.gamemode
+    - essentials.joinfull
+    options:
+      prefix: '&e[&a&lBuilder&e] '
+  Youtube:
+    options:
+      prefix: '&e[&5Youtober&e]'
+    inheritance:
+    - Member
+    - TheKing
+    - king
+    permissions:
+    - deathdropsapi.keep
+    - antispam.bypass
+  TheKing:
+    inheritance:
+    - Member
+    - legendary
+    - vip
+    - king
+    permissions:
+    - playervaults.commands.use
+    - playervaults.amount.1
+    - playervaults.amount.2
+    - essentials.tp
+    - deathdropsapi.keep
+    - essentials.craft
+    - deathdropsapi.keep
+    - essentials.kits.TheKing
+    - essentials.invsee
+    - essentials.joinfullserver
+    options:
+      prefix: ❆&f[ &1TheKing ]
+  LAPIS:
+    options:
+      prefix: '[&1Lưuly&e]'
+    inheritance:
+    - member
+    permissions:
+    - deathdropsapi.keep
+    - essentials.nick
+    - essentials.feed
+  Diamond:
+    options:
+      prefix: '&f[&b&lKim cương&f]'
+    inheritance:
+    - member
+    - Iron
+    - Gold
+    - Coal
+    - Vip
+    permissions:
+    - essentials.feed
+    - deathdropsapi.keep
+  Coal:
+    options:
+      prefix: '&f[&0&lThan&f]'
+    inheritance:
+    - member
+    permissions:
+    - essentials.feed
+    - deathdropsapi.keep
+  Allblock:
+    options:
+      prefix: '&f[&1T&2ấ&3t&4c&5ả&6B&7l&8o&9c&0k]'
+    inheritance:
+    - member
+    - vip
+    - theking
+    permissions:
+    - essentials.feed
+    - deathdropsapi.keep
+    - essentials.heal
+    - essentials.warp
+  Iron:
+    options:
+      prefix: '&f&L[&F&LSắt&f]'
+    inheritance:
+    - member
+    - Coal
+    - Lapis
+    permissions:
+    - essentials.feed
+    - deathdropsapi.keep
+    - essentials.fly
+  Gold:
+    options:
+      prefix: '&f[&e&lVàng&f]'
+    inheritance:
+    - member
+    - Coal
+    - Iron
+    - Lapis
+    permissions:
+    - essentials.feed
+    - essentials.fly
+    - deathdropsapi.keep
+schema-version: 1
+users:
+  76a0472b-41da-3928-8c67-bddbb7015be6:
+    group:
+    - Co-Owner
+    options:
+      name: tuananhjr123
+  d549940e-813d-36ff-943f-a97741c74153:
+    group:
+    - Trader
+    options:
+      name: HuyNguyen160805
+  2f6759b5-4a68-3f96-89ab-f066ed3e9928:
+    group:
+    - Trader
+    options:
+      name: MrPartis
+  e03b1d53-5881-3639-b458-341be44c92e7:
+    group:
+    - Owner
+    options:
+      name: Younomi
+  e7d78b2e-5c37-3efc-b159-36ffd4a2696e:
+    permissions:
+    - '*'
+    options:
+      name: Jotoriz
+    group:
+    - Owner
+  3cab4a3c-213c-31cf-8b3f-11cfd211848b:
+    group:
+    - Trader
+    options:
+      name: drop123v4
+  99fb497e-d726-30cf-b942-a1ad201ece80:
+    group:
+    - Trader
+    options:
+      name: Haaaaaa12
+  lilygirl:
+    group:
+    - helper
+  8e400120-b55c-33af-8d64-ac7090c47d35:
+    group:
+    - Owner
+    options:
+      name: _ItzNinJaVN_
+  cd77c8e2-6d55-3057-ac31-6a49a9bbd2eb:
+    options:
+      name: Y_J
+  6d931355-0ce4-3b6d-a493-f78c16cb781c:
+    options:
+      name: KayBoy_YTB
+  10b56a4b-f79e-3725-81fa-15ed4c4b559f:
+    options:
+      name: Jus_Majiko_
+    group:
+    - Builder
+  9e4f9a63-64b4-3e22-a575-f39130b4f77d:
+    group:
+    - default
+    options:
+      name: lilygirl
+  f362eab7-f4db-36a5-ae20-054772a16751:
+    group:
+    - default
+  f77ffbe8-19a1-38e9-96f1-f5699ef8b934:
+    group:
+    - Trader
+    options:
+      name: caohau123123
+  a227128f-5165-34bf-adf1-786be428f607:
+    group:
+    - Trader
+    options:
+      name: _D7Gamer_
+  e82f3663-b97e-3d2e-8748-03eaf9319327:
+    options:
+      name: Refund_SoiBeti
+    permissions:
+    - Trader
+    worlds:
+      world:
+        permissions:
+        - Trader
+    group:
+    - Trader
+  90ba15f1-7b6a-3270-bfe7-d3924423c0ff:
+    options:
+      name: _ShinySky_
+  5f40fd79-4285-3e71-8615-b9fdaf365e84:
+    options:
+      name: vinhvaai10
+  refund_soibett:
+    permissions:
+    - Trader
+  4b948661-8ddc-34c0-bd5e-cd048d1e7931:
+    group:
+    - Builder
+    options:
+      name: pokie78
+  ba0b6d86-abc1-3d77-b818-ac707e2e966a:
+    group:
+    - Builder
+    options:
+      name: clonejaki_VN
+  fdf2bd8f-d570-377a-84ea-795d2599abc2:
+    group:
+    - Builder
+    options:
+      name: silentgaming
+  49041cf8-a88d-3494-b28e-dd339912de00:
+    group:
+    - Builder
+    options:
+      name: minhkhaminh

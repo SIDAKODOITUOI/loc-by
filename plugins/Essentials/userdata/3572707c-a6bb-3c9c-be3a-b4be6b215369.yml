@@ -1,0 +1,29 @@
+lastAccountName: HAnh
+timestamps:
+  login: 1648186069855
+  logout: 1648186074699
+  lastteleport: 1648152477074
+ipAddress: 14.185.147.154
+logoutlocation:
+  world: world
+  x: -49.87937529564336
+  y: 84.0
+  z: -29.066131188969095
+  yaw: -176.0005
+  pitch: 35.85002
+afk: false
+homes:
+  home:
+    world: world
+    x: 14.699999988079071
+    y: 75.12969744885052
+    z: -27.30000001192093
+    yaw: -212.5003
+    pitch: 10.049979
+lastlocation:
+  world: world
+  x: -125.29211384035618
+  y: 80.0
+  z: -77.71649370324181
+  yaw: -115.44888
+  pitch: 43.250034
